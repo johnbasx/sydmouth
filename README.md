@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Sydmouth house logo](/public/images/sydmouth-logo-v2.png)
 
-## Getting Started
+# Furniture & Interior Design Consultant
 
-First, run the development server:
+Over the past 5 years, as an furniture art director and designer, I’ve worked with big and creative clients to successfully help them build their perfect furnitures and unique interior spaces.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Brand Color Reference
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Brand Color      | ![#979278](https://via.placeholder.com/10/979278?text=+) #979278 |
+| Accent Color     | ![#5f594d](https://via.placeholder.com/10/5f594d?text=+) #5f594d |
+| background Color | ![#edede7](https://via.placeholder.com/10/edede7?text=+) #edede7 |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Mirror](public/images/categories/mirrors/mirror-03.jpg)
 
-## Learn More
+![Grey chair](public/images/categories/chairs/grey-chair-02.jpg)
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Client:** React, NextJS, TailwindCSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Related
 
-## Deploy on Vercel
+Here are some related projects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[ALTIUS FITNESS CENTER](https://altius.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[SN Silos](https://sn-group.in/)
+
+[SoilSense](https://soilsense.in/)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
