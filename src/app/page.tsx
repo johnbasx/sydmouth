@@ -1,113 +1,142 @@
+'use client'
+
+import HorizontalCollection from '@/components/HorizontalCollection'
 import Image from 'next/image'
+import React from 'react'
+import { HiArrowRight } from 'react-icons/hi2'
+import { roomTypes } from './data/exports'
+import Marquee from '@/components/ui/Marquee'
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main className="bg-tallow-100">
+      {/* Hero section */}
+
+      <section className="flex min-h-screen justify-center items-center relative">
+        <span className="absolute -top-6 text-tallow-300 drop-shadow-xl opacity-40 font-extrabold  text-[5rem] md:text-[14rem] order-last tracking-tighter">
+          sydmouth
+        </span>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl z-10">
+          <div className="px-6 sm:px-8 py-4 -mt-44 md:mt-64 space-y-4">
+            <span className="uppercase tracking-widest text-tallow-400 font-light">
+              Yaiphaba Naorem
+            </span>
+            <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight">
+              Furniture & Interior design
+            </h1>
+            <p className="text-lg sm:text-xl text-neutral-400 leading-snug">
+              Over the past 5 years, as an furniture art director and designer,
+              I’ve worked with big and creative clients to successfully help
+              them build their perfect furnitures and unique interior spaces.
+            </p>
+
+            <a
+              href="#!"
+              className="mt-10 relative inline-flex items-center px-12 py-3 overflow-hidden font-medium text-neutral-50 bg-tallow-600 rounded-full group"
+            >
+              <span className="absolute left-0 block w-full h-0 transition-all bg-tallow-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+              <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+                <HiArrowRight className="w-5 h-5" />
+              </span>
+              <span className="relative">Look into designs</span>
+            </a>
+          </div>
+          <div className="order-first md:order-last">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
+              className="object-cover h-[70vh] sm:h-full sm:w-full"
+              src="/images/sydmouth-sample-bg01.png"
+              // src='/images/3d-model-2.png'
+              height={1000}
+              width={800}
               priority
+              alt="Symouth backdrop image"
+              unoptimized
             />
-          </a>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+      <section className="bg-tallow-300 mix-blend-darken h-[70vh] flex justify-center items-center py-16 px-6 my-6">
+        <div>
+          <h2 className="text-4xl lg:text-8xl md:max-w-lg lg:max-w-5xl md:text-center text-tallow-950 font-light md:font-normal [text-wrap:balance]">
+            &quot;There is something about the warmth of{' '}
+            <span className="text-tallow-700 font-semibold inline-flex flex-col h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.8xl)*theme(lineHeight.tight))] overflow-hidden">
+              <ul className="block animate-text-slide-3 text-left leading-tight [&_li]:block">
+                <li>wood 🪵</li>
+                <li>love ❤️</li>
+                <li>home 🏠</li>
+                <li aria-hidden="true">wood</li>
+              </ul>
             </span>
+            .&quot;
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+      {/* Collections display */}
+      <section>
+        <div className="max-w-7xl mx-auto my-6 md:my-32 px-6 md:px-8 mb-10 relative">
+          {/* <div className='absolute hidden md:block top-[55%] right-0 mr-12 z-10 bg-tallow-300/30 backdrop-blur-md border border-tallow-400/30 p-4 hover:bg-tallow-300/50 duration-300 text-tallow-50'>
+            <HiArrowRight />
+          </div> */}
+          <div className="py-4 space-y-2 text-left">
+            <span className="uppercase tracking-widest text-tallow-500 font-light">
+              Curated Products
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+            <h2 className="text-6xl md:text-7xl tracking-tight text-tallow-950 font-bold">
+              Collections
+            </h2>
+            {/* <p className='text-lg text-neutral-400'>Create a rustic modern haven with our timeless products.</p> */}
+          </div>
+          <HorizontalCollection />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+        </div>
+      </section>
+      {/* Shop by Room */}
+      <section>
+        <div className="max-w-7xl mx-auto px-6 md:px-8 mb-10 relative">
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <div className="py-4 space-y-2 text-left">
+            {/* <span className="uppercase tracking-widest text-tallow-500 font-light">
+              Based on your rooms
+            </span> */}
+            <h2 className="text-5xl md:text-6xl text-tallow-950 tracking-tight font-bold">
+              Shop by Room
+            </h2>
+            <p className='text-lg text-neutral-500'>Explore our products through the rooms you are looking to furnish</p>
+          </div>
+          <div
+            className="flex-1 justify-self-center flex justify-center overflow-x-scroll no-scrollbar scrolling-touch items-center mb-8 py-6 mt-4 md:mt-0"
+          >
+            <ul className="justify-start md:justify-center flex flex-no-wrap items-center space-y-0 space-x-6">
+              {roomTypes.map((item, idx) => {
+                return (
+                  <li
+                    key={idx}
+                    className="text-sm ml-10 md:ml-0 flex-none uppercase tracking-widest leading-tight font-medium"
+                  >
+                    <a
+                      className="group text-neutral-800 hover:text-tallow-700 transition-all duration-300 ease-in-out"
+                      href="#!"
+                    >
+                      <span className="bg-left-bottom py-2 bg-gradient-to-r from-tallow-600 to-tallow-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                        {item.name}
+                      </span>
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+
+
+        </div>
+
+
+      </section>
+      <Marquee />
     </main>
   )
 }
